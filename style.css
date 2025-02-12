@@ -26,6 +26,9 @@ html,body{
     align-items: center;
     overflow: hidden;
 }
+.wrapper.active{
+    border: none;
+}
 .wrapper .image{
     position: absolute;
     height: 100%;
@@ -57,6 +60,12 @@ html,body{
     color: #9658fe;
     display: none; 
 }
+.wrapper.active:hover #cancel-btn{
+ display: block;
+}
+.wrapper #cancel-btn:hover{
+ color: #e74c3c;
+}
 .wrapper .file-name{
     position: absolute;
     bottom: 0px;
@@ -66,6 +75,9 @@ html,body{
     padding: 8px 0;
     font-size: 18px;
     display: none; 
+}
+.wrapper.active:hover .file-name{
+    display: block;
 }
 .container #custom-btn{
     margin-top: 30px;

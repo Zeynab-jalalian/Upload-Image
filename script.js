@@ -1,5 +1,7 @@
 const defaultBtn=document.querySelector("#default-btn");
+const wrapper=document.querySelector(".wrapper")
 const fileName=document.querySelector(".file-name");
+const cancelBtn=document.querySelector("#cancel-btn");
 const customBtn=document.querySelector("#custom-btn");
 const img=document.querySelector("img");
 let regExp=/[0-9a-zA-Z\^\&\'\@\{\}\[\]\,\$\=\!\-\#\(\)\.\%\+\~\_ ]+$/;
@@ -15,7 +17,13 @@ defaultBtn.addEventListener("change",function(){
     reader.onload=function(){
         const result=reader.result;
         img.src=result;
+        wrapper.classList.add("active");
     }
+    cancelBtn.addEventListener("click",function(){
+        img.src="";
+        wrapper.classList.remove("active");
+
+    })
     reader.readAsDataURL(file);
    }
    if(this.value){
