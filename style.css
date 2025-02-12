@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -54,7 +55,7 @@ html,body{
     font-size: 20px;
     cursor: pointer;
     color: #9658fe;
-    display: none;
+    display: none; 
 }
 .wrapper .file-name{
     position: absolute;
@@ -64,7 +65,7 @@ html,body{
     color: #fff;
     padding: 8px 0;
     font-size: 18px;
-    display: none;
+    display: none; 
 }
 .container #custom-btn{
     margin-top: 30px;
@@ -79,5 +80,6 @@ html,body{
     letter-spacing: 1px;
     text-transform: uppercase;
     cursor: pointer;
+    outline: none;
     background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
 }
