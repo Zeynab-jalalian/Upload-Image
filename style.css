@@ -71,9 +71,26 @@ html,body{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 .img img{
+    border-radius: 10px;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.wrapper.active:hover .cancel{
+    display: block;
+
+}
+.wrapper.active .cancel:hover{
+    color: red;
+}
+.wrapper.active{
+    border: none;
+}
+.wrapper.active:hover .fileName{
+    display: block;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
 }
